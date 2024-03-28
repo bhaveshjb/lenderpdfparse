@@ -3,3 +3,7 @@ fastapi
 pandas
 tabula-py
 python-multipart
+python-dotenv
+pdfplumber
+requests
+openai==0.28
