@@ -79,7 +79,7 @@ async def extract_table(req: ExtractTableRequest, token: str = Depends(verify_to
                  value given: - Create a new sub-array representing the totals row. - For each total value: - Create 
                  an object with three fields: key, value, and type. - Assign the key as the name of the total value (
                  e.g., Total Annual Revenue). - Assign the value as the total value. - Determine the type of the 
-                 value (string, number, etc.). - Append the object to the sub-array. - Append the sub-array to the 
+                 value (string, number, etc.). Also if there is field with $ sign then include with the $ sign and give the type of it as currency - Append the object to the sub-array. - Append the sub-array to the 
                  rentRollSummary array. 6. Generate a JSON response containing the rentRollSummary array with all the 
                  sub-arrays filled with objects representing row and total data. Note: Ensure to handle any line breaks and 
                      formatting issues in the extracted data to generate the JSON response accurately. Do not include 
